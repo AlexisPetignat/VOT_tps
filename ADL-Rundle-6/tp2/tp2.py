@@ -207,7 +207,7 @@ def main():
         height, width, layers = img[0].shape
         fourcc = cv2.VideoWriter_fourcc(*"mp4v")
         video = cv2.VideoWriter(
-            "video.avi", fourcc=fourcc, fps=30, frameSize=(width, height)
+            "video.mp4", fourcc=fourcc, fps=30, frameSize=(width, height)
         )
 
         for frame in img:
@@ -215,7 +215,7 @@ def main():
 
         cv2.destroyAllWindows()
         video.release()
-        print("Video saved as video.avi")
+        print("Video saved as video.mp4")
 
     df_tracked.to_csv(FILE_OUTPUT, header=False, index=False, sep=",")
     print(f"Tracked detections saved as {FILE_OUTPUT}")
