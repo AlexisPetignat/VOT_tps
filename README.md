@@ -18,7 +18,7 @@ Kalman Filter is a recursive algorithm used for estimating the state of a dynami
 
 ### Results
 The Kalman Filter tracker was able to successfully track the object throughout the video sequence. The predicted bounding boxes closely followed the actual position of the object, demonstrating the effectiveness of the Kalman Filter for object tracking in a simple scenario. Below is a visualization of the tracking results. The red box represents the actual detected position of the object, while the blue box represents the predicted position from the Kalman Filter.
-![Kalman Filter Tracking Results](./2D_Kalman-Filter_TP1/video.avi)
+![Kalman Filter Tracking Results](./gifs/tp1.gif)
 
 
 ## TP2: Multi-Object Tracking using IoU-based Data Association
@@ -43,7 +43,7 @@ IoU (Intersection over Union) is a metric used to evaluate the overlap between t
 
 ### Results
 The IoU-based multi-object tracker was able to successfully track multiple objects throughout the video sequence. The bounding boxes were correctly associated with the detected objects, and the tracker was able to maintain consistent IDs for each object. Below is a visualization of the tracking results. Each bounding box is labeled with its corresponding track ID.
-![IoU-based Multi-Object Tracking Results](./ADL-Rundle-6/tp2/video.avi)
+![IoU-based Multi-Object Tracking Results](./gifs/tp2.gif)
 
 
 ## TP3: Kalman Filter with IoU-based Data Association for Multi-Object Tracking
@@ -63,7 +63,7 @@ This TP is the combination of the first two TPs. The goal was to upgrade the IoU
 ### Results
 The Kalman Filter with IoU-based data association multi-object tracker was able to successfully track multiple objects throughout the video sequence. The integration of the Kalman Filter improved the tracking performance, resulting in smoother trajectories and more consistent IDs for each object. Below is a visualization of the tracking results. Each bounding box is labeled with its corresponding track ID. When a bounding box is inferred, the word "Predicted" is displayed next to the ID.
 The result is visibly better than the previous TP, with less shaking boxes and better ID consistency. However, some phantom boxes can still appear from time to time when many objects are on the scene or when objects cross paths.
-![Kalman Filter with IoU-based Multi-Object Tracking Results](./ADL-Rundle-6/tp3/video.avi)
+![Kalman Filter with IoU-based Multi-Object Tracking Results](./gifs/tp3.gif)
 
 
 ## TP4: Deep Learning-based Object Tracking with IoU Data Association and Kalman Filter
@@ -82,7 +82,7 @@ The implementation of this TP was quite straightforward since it was mostly reus
 
 ### Results
 The Deep Learning-based object tracker with IoU data association and Kalman Filter was able to successfully track multiple objects throughout the video sequence. The integration of the Deep Learning-based object detector improved the data association process, resulting in more accurate tracking and less ID switching between objects. Below is a visualization of the tracking results. Each bounding box is labeled with its corresponding track ID. When a bounding box is inferred, the word "Predicted" is displayed next to the ID.
-![Deep Learning-based Multi-Object Tracking Results](./ADL-Rundle-6/tp4/video.avi)
+![Deep Learning-based Multi-Object Tracking Results](./gifs/tp4.gif)
 
 
 # Conclusion
