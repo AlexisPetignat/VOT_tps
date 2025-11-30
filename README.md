@@ -1,5 +1,5 @@
 # Visual Object Tracking: Project report on TPs 1–4
-### Author: name, 2025
+### Author: Alexis Petignat, 2025
 
 This report presents the work done during the four practical sessions (TPs) of the Visual Object Tracking course. The main objective was to implement various object tracking algorithms on video sequences, such as the Kalman Filter, IoU-based multi-object tracking, and deep learning–based tracking. Below is a summary of each TP, the implementation process and the difficulties encountered.
 
